@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200&family=Slabo+27px&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Slabo 27px', serif;
+    color: #555;
+}
+
+.socials a {
+    margin-left: 10px;
+}
+
+.name {
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #19A7CE;
+}
+
+.distro {
+    border: 1px solid #F6F1F1;
+    padding: 2px;
+    overflow-y: auto;
+}
+
+.otc {
+    padding: 2px;
+    width: 100%;
+    border: 1px solid #F6F1F1;
+}
+
+.distros {
+    width: calc(100% - 420px);
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.otcs {
+    height: 100%;
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.stat {
+    width: 43%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F1F1;
+}
+
+.proj {
+    width: 100%;
+    border: 1px solid #F6F1F1;
+    padding: 5px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.statistics {
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projs {
+    width: calc(100% - 420px);
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.socials {
+    width: calc(100% - 625px);
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.socials img {
+    width: 40px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    margin-left: 75px;
+    background-color: darkgray;
+    box-shadow: 0px 0px 5px 1px #555;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F1F1;
+    border-radius: 5px;
+    box-shadow: -20px -20px 5px #AFD3E2, 0px 0px 10px 2px #888;
+    overflow: hidden;
+}
+
+
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+#content {
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#nav {
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#projects {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F1F1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.project {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+}
+
+#project_info, #user_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#user_info {
+    flex-direction: column;
+    padding: 20px;
+}
+
+#header {
+    height: 300px;
+    width: 100%;
+}
+
+#my_projs {
+    height: calc(100% - 550px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#distro_otc {
+    height: 250px;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cover {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.cover img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.login {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px #333;
+    border-radius: 4px;
+    z-index: 6;
+    background-color: white;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    z-index: 5;
+    position: absolute;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}

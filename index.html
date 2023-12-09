@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // store info to access from all scripts -->
+    <input type="text" class="hidden" id="user_username">
+    <input type="text" class="hidden" id="user_firstname">
+    <input type="text" class="hidden" id="user_lastname">
+    <input type="text" class="hidden" id="user_id">
+
+    <div class="login">
+        <h2>Sign up with your Telegram.</h2>
+        <div class="tg-btn">
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="weeotc_bot" data-size="medium" data-userpic="false" data-onauth="onTelegramAuth(user)"></script>
+        </div>
+    </div>
+    <div class="background"></div>
+    <main>
+        <aside id="menu">
+            <div id="nav">
+                <p id="profile">My Projects</p>
+            </div>
+            <div id="projects">
+                <div class="project"><div>FOTA</div><div>$1000</div></div>
+                <div class="project"><div>GameStar</div><div>$1000</div></div>
+                <div class="project"><div>Mummy</div><div>$1000</div></div>
+                <div class="project"><div>Sidus</div><div>$1000</div></div>
+                <div class="project"><div>Portal Finance</div><div>$1000</div></div>
+                <div class="project"><div>Fomolab</div><div>$1000</div></div>
+                <div class="project"><div>Operon Origins</div><div>$1000</div></div>
+                <div class="project"><div>Winkies</div><div>$1000</div></div>
+                <div class="project"><div>New Life</div><div>$1000</div></div>
+                <div class="project"><div>Gunzilla</div><div>$1000</div></div>
+                <div class="project"><div>IQ Protocol</div><div>$1000</div></div>
+            </div>
+        </aside>
+        <div id="content">
+            <div id="project_info" class="hidden">
+
+            </div>
+            <div id="user_info">
+                <div id="header">
+                    <div class="cover">
+                        <img src="./media/cover1.jpg" alt="cover">
+                    </div>
+                    <div class="about">
+                        <div class="avatar">
+                            <img src="./media/avatar.jpg" alt="avatar">
+                        </div>
+                        <div class="name">
+                            <h3 id="name">Altair WeeHODL</h3>
+                            <i>If you are going to be thinking anyway, think big!</i>
+                        </div>
+                        <div class="socials">
+                            <a href="#"><img src="./media/instagram.png" alt="instagram"></a>
+                            <a href="#"><img src="./media/telegram.png" alt="telegram"></a>
+                            <a href="#"><img src="./media/linkedin.png" alt="linkedin"></a>
+                            <a href="#"><img src="./media/facebook.png" alt="facebook"></a>
+                            <a href="#"><img src="./media/youtube.png" alt="youtube"></a>
+                            <a href="#"><img src="./media/twitter.png" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="my_projs">
+                    <div class="projs">
+                            <div class="proj"><div>ID:</div><div>62387443</div></div>
+                            <div class="proj"><div>Username:</div><div>@altairson</div></div>
+                            <div class="proj"><div>Email:</div><div>altair@weehodl.com</div></div>
+                            <div class="proj"><div>Wallet BEP20:</div><div>0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97</div></div>
+                            <div class="proj"><div>Wallet ERC20:</div><div>0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97</div></div>
+                            <div class="proj"><div>Wallet Solana:</div><div>0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97</div></div>
+                            <div class="proj"><div>Languages:</div><div>EN/GE/RU/CHE</div></div>
+                    </div>
+                    <div class="statistics">
+                        <div class="stat">Projects involved: 10</div>
+                        <div class="stat">Total invested: 13,500</div>
+                        <div class="stat">Members invited: 50</div>
+                        <div class="stat">Fees: 10%</div>
+                        <div class="stat">Priority: 1</div>
+                        <div class="stat">Rating(0-100): 99.9</div>
+                    </div>
+                </div>
+                <div id="distro_otc">
+                    <div class="otcs">
+                        <div class="otc">otc 1</div>
+                        <div class="otc">otc 2</div>
+                        <div class="otc">otc 3</div>
+                        <div class="otc">otc 4</div>
+                        <div class="otc">otc 5</div>
+                        <div class="otc">otc 6</div>
+                        <div class="otc">otc 7</div>
+                        <div class="otc">otc 8</div>
+                        <div class="otc">otc 9</div>
+                        <div class="otc">otc 10</div>
+                    </div>
+                    <div class="distros">
+                        <div class="distro">distro 1</div>
+                        <div class="distro">distro 2</div>
+                        <div class="distro">distro 3</div>
+                        <div class="distro">distro 4</div>
+                        <div class="distro">distro 5</div>
+                        <div class="distro">distro 6</div>
+                        <div class="distro">distro 7</div>
+                        <div class="distro">distro 8</div>
+                        <div class="distro">distro 9</div>
+                        <div class="distro">distro 10</div>
+                        <div class="distro">distro 11</div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+
+    <script>
+        function onTelegramAuth(user) {
+            if (user) {
+                toggleBackground(false);
+                displayUserInfo(user);
+            }
+        }
+
+        function toggleBackground(show) {
+            if (show) {
+                $(".background").addClass("hidden");
+            }
+            else {
+                $(".background").removeClass("hidden");
+            }
+        }
+
+        function displayUserInfo(user) {
+            $("#name").val(user.first_name + ' ' + user.last_name);
+            $("#user_username") = user.username;
+            $("#user_firstname") = user.first_name;
+            $("#user_lastname") = user.last_name;
+            $("#user_id") = user.id;
+            $(".login").toggleClass('hidden');
+            toggleBackground(false);
+        }
+
+    </script>
+</body>
+</html>
