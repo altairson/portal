@@ -140,10 +140,10 @@
 
         function displayUserInfo(user) {
             $("#name").val(user.first_name + ' ' + user.last_name);
-            $("#user_username") = user.username;
-            $("#user_firstname") = user.first_name;
-            $("#user_lastname") = user.last_name;
-            $("#user_id") = user.id;
+            $("#user_username").val(user.username);
+            $("#user_firstname").val(user.first_name);
+            $("#user_lastname").val(user.last_name);
+            $("#user_id").val(user.id);
             $(".login").toggleClass('hidden');
             toggleBackground(false);
         }
