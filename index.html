@@ -16,8 +16,19 @@
     <input type="text" class="hidden" id="user_lastname">
     <input type="text" class="hidden" id="user_id">
 
+    <div id="home">
+        <div class="home-btn" id="user">I am User</div>
+        <div class="home-btn" id="admin">I am Admin</div>
+    </div>
     <div class="login">
-        <h2>Sign up with your Telegram.</h2>
+        <h2 id="singInTgMessage">Sign up with your Telegram.</h2>
+        <h2 id="telegramName"></h2>
+        <div id="tgSignUpInstruction" class="hidden">
+            <h3>Please go to your telegram and message <a href="http://@weeotc_bot">WeeHODL Bot</a> to Register your login and password.</h3>
+            <i>Once you finish Registration, please come back and press log in button.</i>
+            <button id="login">Log In</button>
+        </div>
+        
         <div class="tg-btn">
             <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="weeotc_bot" data-size="medium" data-userpic="false" data-onauth="onTelegramAuth(user)"></script>
         </div>
@@ -128,6 +139,16 @@
             }
         }
 
+        $("#user").click(function() {
+            showLogInPage();
+        })
+
+        function showLogInPage() {
+            $("#home").addClass("hidden");
+            toggleBackground(false);
+            $(".login").removeClass('hidden');
+        }
+
         function toggleBackground(show) {
             if (show) {
                 $(".background").addClass("hidden");
@@ -135,6 +156,12 @@
             else {
                 $(".background").removeClass("hidden");
             }
+        }
+
+        function userTelegramAuth(user) {
+            $("#singInTgMessage").addClass("hidden");
+            $("#telegramName")[0].innerText = user.first_name + ' ' + user.last_name;
+            $("#tgSignUpInstruction").removeClass("hidden");
         }
 
         function displayUserInfo(user) {

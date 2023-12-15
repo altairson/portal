@@ -19,6 +19,7 @@ $(document).ready(function() {
         $(".user-info").toggleClass('hidden');
     }
 
+    
 
 
 
